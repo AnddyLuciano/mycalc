@@ -1,0 +1,96 @@
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #353535;
+    background: linear-gradient(45deg,#424242,#222222);
+    height: 100vh;
+    background: rgb(249,236,255);
+    background: radial-gradient(circle, rgba(249,236,255,1) 0%, rgba(148,187,233,1) 100%);
+}
+.container{
+    width: 400px;
+    height: 700px;
+    background-color:white;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template: 50px 150px 100px 100px 100px 100px 100px/100px 100px 100px 100px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    border-color: #424242;
+    box-shadow: 3px 10px 35px -2px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 3px 10px 35px -2px rgba(0,0,0,0.31);
+    -moz-box-shadow: 3px 10px 35px -2px rgba(0,0,0,0.31);
+}
+
+.title{
+grid-area: 1/1/2/-1;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #1f6cab;
+}
+
+.inp-out-box{
+grid-area: 2/1/2/-1;
+margin: 10px;
+}
+
+#inp-out{
+    font-size: 36px;
+    width: 100%;
+    height: 100%; 
+    padding: 10px;
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: aliceblue;
+    border-radius: 7px;
+    text-align: end;
+}
+
+.btn-box{
+grid-area: 3/1/-1/-1;
+}
+
+.row1,.row2,.row3,.row4{
+    display: grid;
+    grid-template: 100px/100px 100px 100px 100px;
+}
+.row5{
+    display: grid;
+    grid-template-rows: 100px;
+}
+.column{
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(36, 34, 34, 0.3);
+    background-color: white;
+}
+
+.column:hover{
+    cursor: pointer;
+}
+.row5 .column{
+    font-size: 36px;
+    background: linear-gradient(90deg,#1f6cab,#298ad9);
+}
+
+.op{
+    color:#298ad9;
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+.pointed{
+    box-shadow: 0 2px 5px rgba(36, 34, 34, 0.1);
+}
